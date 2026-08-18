@@ -1,14 +1,8 @@
 let contador = 0;
 
-document.getElementById("botao").onclick= () => {
+document.getElementById("botao").onclick = () => {
     contador++;
-    let toast = document.getElementById("toast");
-    if(!toast) {
-        toast = document.createElement("div");
-        toast.id = "toast";
-        toast.className="toast";
-        document.body.appendChild(toast);
-    }
-    toast.textContent= `Você clicou ${contador}`;
-    toast.classList.add("show");
+
+    document.getElementById("contadorTexto").textContent =
+        `Você clicou ${contador} vez${contador === 1 ? "" : "es"}!`;
 };

@@ -4,6 +4,17 @@ body {
     text-align: center;
     padding: 50px;
 }
+
+h1 {
+    color: #007BFF;
+}
+
+#contadorTexto {
+    font-size: 20px;
+    margin: 20px;
+    font-weight: bold;
+}
+
 button {
     padding: 10px 20px;
     background-color: #007BFF;
@@ -11,7 +22,9 @@ button {
     border: none;
     font-size: 16px;
     border-radius: 5px;
+    cursor: pointer;
 }
+
 button:hover {
     background-color: #0056b3;
 }
